@@ -11,6 +11,7 @@
 		E1B810AC2C07E6D400DBFC58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B810AB2C07E6D400DBFC58 /* ContentView.swift */; };
 		E1B810AE2C07E6D600DBFC58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B810AD2C07E6D600DBFC58 /* Assets.xcassets */; };
 		E1B810B12C07E6D600DBFC58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B810B02C07E6D600DBFC58 /* Preview Assets.xcassets */; };
+		E1B810B92C07E7A300DBFC58 /* NSDLSwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = E1B810B82C07E7A300DBFC58 /* NSDLSwiftPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B810B92C07E7A300DBFC58 /* NSDLSwiftPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NSDLDemoApp;
+			packageProductDependencies = (
+				E1B810B82C07E7A300DBFC58 /* NSDLSwiftPackage */,
+			);
 			productName = NSDLDemoApp;
 			productReference = E1B810A62C07E6D400DBFC58 /* NSDLDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = E1B8109D2C07E6D400DBFC58;
+			packageReferences = (
+				E1B810B72C07E7A300DBFC58 /* XCRemoteSwiftPackageReference "NSDLSwiftPackage" */,
+			);
 			productRefGroup = E1B810A72C07E6D400DBFC58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1B810B72C07E7A300DBFC58 /* XCRemoteSwiftPackageReference "NSDLSwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Inzamamansari/NSDLSwiftPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1B810B82C07E7A300DBFC58 /* NSDLSwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1B810B72C07E7A300DBFC58 /* XCRemoteSwiftPackageReference "NSDLSwiftPackage" */;
+			productName = NSDLSwiftPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1B8109E2C07E6D400DBFC58 /* Project object */;
 }
